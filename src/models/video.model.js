@@ -35,7 +35,7 @@ isPublished: {
     default: true,
 },
 
-owener: {
+owner: {
     type: Schema.Types.ObjectId,
     ref: "User",
 },
