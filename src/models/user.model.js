@@ -52,7 +52,7 @@ userSchema.pre("save", async function () {
 
 userSchema.methods.isPasswordCorrect = async function (password) {
     return await bcrypt.compare(password, this.password);
-}
+};
 console.log("Access expiry:", process.env.ACCESS_TOKEN_EXPIRY);
 console.log("Refresh expiry:", process.env.REFRESH_TOKEN_EXPIRY);
 
